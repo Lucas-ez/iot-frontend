@@ -1,0 +1,44 @@
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    user-select: none;
+}
+
+.logo {
+    font-family: 'Smooch', cursive;
+    font-size: 72px;
+    font-weight: lighter;
+    margin: 0.5em 0 0.2em 0;
+}
+
+li {
+    list-style: none;
+    font-size: 20px;
+}
+
+header {
+    padding-inline: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-inline: 10px;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    font-family: 'Koulen', cursive;
+    transition: transform 0.3s;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}

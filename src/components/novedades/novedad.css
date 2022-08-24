@@ -1,0 +1,24 @@
+.Novedad {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    
+    border: 1px solid white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: left;
+}
+
+.Novedad h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.Novedad .cuerpo {
+    font-size: 1.2rem;
+}
+
+.Novedad .fuente a{
+    color: white;
+}

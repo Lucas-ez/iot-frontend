@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(9, 9, 9) 0%, rgb(28, 28, 28) 55%, rgb(34, 34, 34) 100%);
+  color: white;
+}
