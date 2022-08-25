@@ -11,11 +11,11 @@ function App() {
       <BrowserRouter>
         <Header/>
         <Routes>
-          <Route path="iot/home" element={<Home/>} />
-          <Route path='iot/asistentes' element={<Asistentes/>}/>
-          <Route path='iot/dispositivos' element={<Dispositivos/>}/>
-          <Route path='iot/novedades' element={<Novedades/>}/>
-          <Route path='iot/about' element={<About/>}/>
+          <Route path="/" element={<Home/>} />
+          <Route path='asistentes' element={<Asistentes/>}/>
+          <Route path='dispositivos' element={<Dispositivos/>}/>
+          <Route path='novedades' element={<Novedades/>}/>
+          <Route path='about' element={<About/>}/>
         </Routes>
       </BrowserRouter>
     </div>
