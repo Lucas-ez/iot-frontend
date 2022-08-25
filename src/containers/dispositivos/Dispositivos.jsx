@@ -13,7 +13,7 @@ function Dispositivos() {
     useEffect(() => {
         const getDispositivos = async () => {
         setLoading(true)
-        const response = await axios.get('http://localhost:3000/api/dispositivos')
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/dispositivos`)
 
         setDispositivos(response.data)
         setLoading(false)
@@ -44,11 +44,14 @@ function Dispositivos() {
                 </div>
             </div>
             <div className="grid">
-                {dispositivos.map((dispositivo) => (
-                    <a href={"#info"} key={dispositivo.id} className="imgBox">
-                            <img src={dispositivo.imagen} alt={dispositivo.nombre} onClick={handleClick}/>
-                        </a>)
-                )}
+                {loading ? 
+                    <Subtitle txt={"Cargando..."} />:
+                    dispositivos.map((dispositivo) => (
+                        <a href={"#info"} key={dispositivo.id} className="imgBox">
+                                <img src={dispositivo.imagen} alt={dispositivo.nombre} onClick={handleClick}/>
+                            </a>)
+                    )
+                }
             </div>
         </div>
     )

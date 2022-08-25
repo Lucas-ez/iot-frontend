@@ -25,6 +25,10 @@
     gap: 1.5em;
 }
 
+.bigBox img {
+    max-width: 60%;
+}
+
 .imgBox {
     height: 15vw;
     width: 15vw;

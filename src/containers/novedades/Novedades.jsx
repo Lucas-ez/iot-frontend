@@ -1,5 +1,5 @@
 import './novedades.css'
-import { Title } from './../../components/Titles'
+import { Title, Subtitle } from './../../components/Titles'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Novedad from './../../components/novedades/Novedad'
@@ -12,7 +12,7 @@ function Novedades() {
   useEffect(() => {
     const getNovedades = async () => {
       setLoading(true)
-      const response = await axios.get('http://localhost:3000/api/novedades')
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/novedades`)
 
       setNovedades(response.data)
       setLoading(false)
@@ -27,7 +27,7 @@ function Novedades() {
       <Title txt="Novedades"/>
       <div className='Novedades__container'>
       {loading ? 
-        <div>Cargando...</div> :
+        <Subtitle txt={"Cargando..."} /> :
         novedades.map(novedad => (
           <Novedad key={novedad.id} cuerpo={novedad.cuerpo} titulo={novedad.titulo} fuente={novedad.fuente}/>
           ))
