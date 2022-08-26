@@ -9,19 +9,19 @@ const asistentes = [
         img: googleImg,
         nombreImg: "Google Home",
         titulo: "Google Assistant",
-        descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe dolor facilis cumque, nisi, debitis iusto officia neque sed accusamus possimus nesciunt eveniet excepturi dolores quidem harum laboriosam quaerat autem."
+        descripcion: "Es el asistente virtual desarrollado con una inteligencia artificial de Google, con él se pueden controlar, a través de la voz, todos los dispositivos conectados al hogar. Puede conectarse al smarphone a traves de app disponible en iOS y Android."
     },
     {
         img: amazonImg,
         nombreImg: "Amazon Echo",
         titulo: "Alexa",
-        descripcion: "lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe dolor facilis cumque, nisi, debitis iusto officia neque sed accusamus possimus nesciunt eveniet excepturi dolores quidem harum laboriosam quaerat autem."
+        descripcion: "Es el asistente de voz de Amazon puede encontrarse en los altavoces inteligentes Amazon Echo, en otros altavoces inteligentes donde también está integrado y en la aplicación móvil. Existen más de 28.000 dispositivos compatibles con Alexa."
     },
     {
         img: appleImg,
         nombreImg: "Apple HomePod",
         titulo: "Siri",
-        descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe dolor facilis cumque, nisi, debitis iusto officia neque sed accusamus possimus nesciunt eveniet excepturi dolores quidem harum laboriosam quaerat autem."
+        descripcion: "Siri fue el primer gran asistente de voz en ser lanzado, es el asistente digital de Apple y solo esta disponible para los dispositivos de esta marca por lo q tiene un uso más limitado que otros asistentes."
     }
 ]
 
@@ -72,7 +72,7 @@ function Asistentes() {
                     textAlign: "left",
                 }
             }>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis saepe dolor facilis cumque, nisi, debitis iusto officia neque sed accusamus possimus nesciunt eveniet excepturi dolores quidem harum laboriosam quaerat autem.
+                A través de una inteligencia artificial son capaces de reconocer el lenguaje y responder a comandos de voz para realizar tareas e interactuar con otros dispositivos. Se puede acceder a ellos a traves de un smarphone o un dispositivo específico como los siguientes.
             </p>
             {
                 asistentes.map((asistente, index) => (
