@@ -1,5 +1,5 @@
 import { Title, Subtitle } from '../../components/Titles';
-import img from '../../img/portrait.png';
+import img from '../../img/portrait.jpg';
 import "./about.css";
 import axios from 'axios'
 import { useState } from 'react'
@@ -43,8 +43,9 @@ function About() {
             <div className='info'>
                 <img src={img} alt="retrato" className='retrato'/>
                 <div>
-                    <Subtitle txt={"Nombre Apellido"} />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eum tempore! Ex soluta incidunt est vitae voluptatibus iste dolores autem nam hic dicta. Atque facere enim optio placeat quia corporis.</p>
+                    <Subtitle txt={"Lucas Brest"} />
+                    <h2>Desarrollador Web Full Stack</h2>
+                    <p>Portfolio: <a href="https://www.brestlucas.com.ar/">www.brestlucas.com.ar</a></p>
                 </div>
             </div>
             <div className='contacto'>
