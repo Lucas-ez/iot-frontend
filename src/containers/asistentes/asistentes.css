@@ -1,0 +1,36 @@
+.Asistente {
+  padding-inline: 10%;
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.Asistente img {
+  display: block;
+  width: 35%;
+}
+
+.Asistente:nth-child(2n-1) {
+  margin-bottom: 6rem;
+  flex-direction: row;
+}
+
+.Asistente:nth-child(2n) {
+  margin-bottom: 2rem;
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 720px) {
+
+  .Asistente {
+    gap: 0rem;
+  }
+
+  .Asistente:nth-child(n) {
+    flex-direction: column;
+  }
+
+  .Asistente img {
+    width: 60%;
+  }
+}

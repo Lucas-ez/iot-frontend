@@ -69,3 +69,52 @@
 a {
     color: white;
 }
+
+@media (max-width: 720px) {
+  .info {
+    margin-top: 60px;
+    flex-direction: column;
+    gap: 20px;
+    
+    padding-bottom: 60px;
+  }
+
+  .retrato {
+    max-width: 50%;
+    object-fit: contain;
+  }
+
+.contacto {
+  margin-top: 10px;
+}
+
+.formulario {
+    margin-top: 0px;
+    margin-inline: 10%;
+    gap: 1rem;
+}
+
+.tres-input {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input {
+    width: 100%;
+} 
+
+.button {
+    width: 40%;
+    height: 3em;
+    text-align: center;
+}
+
+.campo{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    font-size: 1.2em;
+    border-radius: 3px;
+}
+}

@@ -1,6 +1,12 @@
 .Novedades__container {
-    padding-left: 10%;
+    padding-inline: 10%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+@media (max-width: 524px) {
+  .Title {
+    display: none;
+  }
 }

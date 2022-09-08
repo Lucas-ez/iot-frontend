@@ -3,6 +3,7 @@ import amazonImg from "../../img/asistentes/amazonecho.png"
 import appleImg from "../../img/asistentes/applehomepod.png"
 
 import {Subtitle, Title} from "../../components/Titles"
+import './asistentes.css'
 
 const asistentes = [
     {
@@ -27,32 +28,17 @@ const asistentes = [
 
 const Asistente = (args) => {
 
-    const index = args.props.index
     const { img, nombreImg, titulo, descripcion } = args.props.asistente
 
     return (
-        <div className="Asistentes" style={
-            {   
-                paddingInline: '10%',
-                display: "flex",
-                alignItems: "center",
-                gap: "1.5em",
-                marginBottom: (index%2 === 1)?"2em":"6em",
-                flexDirection: (index%2 === 1)?"row-reverse":"row",
-            }
-        }>
-            <img src={img} alt={nombreImg} style={
-                {
-                    display: "block",
-                    width: "35%",
-                }
-            }/>
+        <div className="Asistente">
+            <img src={img} alt={nombreImg}/>
             <div>
                 <Subtitle txt={titulo} />
                 <p style={
                     {   
                         paddingTop: "2rem",
-                        fontSize: "2vw",
+                        fontSize: "1rem",
                     }
                 }>{descripcion}</p>
             </div>
@@ -68,7 +54,7 @@ function Asistentes() {
                 {
                     paddingInline: '10%',
                     paddingBottom: '8rem',
-                    fontSize: "2em",
+                    fontSize: "1.8rem",
                     textAlign: "left",
                 }
             }>

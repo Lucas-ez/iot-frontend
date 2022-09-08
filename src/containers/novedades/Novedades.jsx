@@ -24,7 +24,9 @@ function Novedades() {
 
   return (
     <div className='Novedades'>
-      <Title txt="Novedades"/>
+      <div className='Title'>
+        <Title txt="Novedades"/>
+      </div>
       <div className='Novedades__container'>
       {loading ? 
         <Subtitle txt={"Cargando..."} /> :

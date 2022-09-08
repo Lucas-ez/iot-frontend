@@ -5,3 +5,8 @@
   margin-inline: 5%;
 }
 
+@media (max-width: 980px) {
+  .App {
+    margin-inline: 1%;
+  }
+}

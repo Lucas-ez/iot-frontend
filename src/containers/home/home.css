@@ -1,0 +1,12 @@
+main p {
+  font-size: 3.8vw;
+  margin-top: 2vh;
+  padding-top: 2rem;
+  padding-inline: 5%;
+}
+
+@media (max-width: 720px) {
+  main p {
+    font-size: 2rem;
+  }
+}

@@ -29,18 +29,15 @@ function Dispositivos() {
 
     return (
         <div className="Dispositivos" id={"info"}>
+          <div className='Title'>
             <Title txt={"Dispositivos"}/>
+          </div>
             <div className="bigBox" 
                 style={{display:(bigBox.id === 0?"none":"flex")}}>
                 <img src={bigBox.imagen} alt={bigBox.nombre} />
                 <div>
                     <Subtitle txt={bigBox.nombre} />
-                    <p style={
-                    {   
-                        paddingTop: "2rem",
-                        fontSize: "2vw",
-                    }
-                    }>{bigBox.descripcion}</p>
+                    <p>{bigBox.descripcion}</p>
                 </div>
             </div>
             <div className="grid">

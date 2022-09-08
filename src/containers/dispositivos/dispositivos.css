@@ -58,3 +58,58 @@ img {
     opacity: 0.9;
     transform: scale(1.05);
 }
+
+.bigBox div p{
+  padding-top: 2rem;
+  font-size: 2vw;
+}
+
+@media (max-width: 720px) {
+  .bigBox {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    margin-inline: 10%;
+
+    width: 80%;
+    max-height: none;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+  .bigBox img {
+      max-width: 60%;
+  }
+
+  .bigBox div p{
+    font-size: 1.2rem;
+  }
+
+  .grid {
+    padding-inline: 20%;
+    margin-bottom: 100px;
+
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 0.8rem;
+  }
+
+  .imgBox {
+    height: 20vw;
+    width: 20vw;
+  }
+}
+
+@media (max-width: 524px) {
+
+  .bigBox {
+    margin-top: 12rem;
+    margin-bottom: 10rem;
+  }
+
+  .Title {
+    display: none;
+  }
+}
