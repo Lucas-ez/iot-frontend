@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/iot-frontend/static/css/main.ab100347.css",
-    "main.js": "/iot-frontend/static/js/main.99427910.js",
+    "main.css": "/iot-frontend/static/css/main.65e246ad.css",
+    "main.js": "/iot-frontend/static/js/main.93a031e1.js",
     "static/js/787.cda612ba.chunk.js": "/iot-frontend/static/js/787.cda612ba.chunk.js",
     "static/media/amazonecho.png": "/iot-frontend/static/media/amazonecho.c4e76400a7e8d3880de6.png",
     "static/media/applehomepod.png": "/iot-frontend/static/media/applehomepod.d7a32617ef9b236a4f72.png",
     "static/media/googlehome.png": "/iot-frontend/static/media/googlehome.1343e8acb6857a3a0cf1.png",
     "static/media/portrait.jpg": "/iot-frontend/static/media/portrait.2732ac7a4de9356e124a.jpg",
     "index.html": "/iot-frontend/index.html",
-    "main.ab100347.css.map": "/iot-frontend/static/css/main.ab100347.css.map",
-    "main.99427910.js.map": "/iot-frontend/static/js/main.99427910.js.map",
+    "main.65e246ad.css.map": "/iot-frontend/static/css/main.65e246ad.css.map",
+    "main.93a031e1.js.map": "/iot-frontend/static/js/main.93a031e1.js.map",
     "787.cda612ba.chunk.js.map": "/iot-frontend/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab100347.css",
-    "static/js/main.99427910.js"
+    "static/css/main.65e246ad.css",
+    "static/js/main.93a031e1.js"
   ]
 }
