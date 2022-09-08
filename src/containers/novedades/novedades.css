@@ -4,9 +4,3 @@
     flex-direction: column;
     gap: 2rem;
 }
-
-@media (max-width: 524px) {
-  .Title {
-    display: none;
-  }
-}

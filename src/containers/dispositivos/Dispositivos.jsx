@@ -28,29 +28,27 @@ function Dispositivos() {
     }
 
     return (
-        <div className="Dispositivos" id={"info"}>
-          <div className='Title'>
-            <Title txt={"Dispositivos"}/>
-          </div>
-            <div className="bigBox" 
-                style={{display:(bigBox.id === 0?"none":"flex")}}>
-                <img src={bigBox.imagen} alt={bigBox.nombre} />
-                <div>
-                    <Subtitle txt={bigBox.nombre} />
-                    <p>{bigBox.descripcion}</p>
-                </div>
-            </div>
-            <div className="grid">
-                {loading ? 
-                    <Subtitle txt={"Cargando..."} />:
-                    dispositivos.map((dispositivo) => (
-                        <a href={"#info"} key={dispositivo.id} className="imgBox">
-                                <img src={dispositivo.imagen} alt={dispositivo.nombre} onClick={handleClick}/>
-                            </a>)
-                    )
-                }
+      <div className="Dispositivos" id={"info"}>
+        <Title txt={"Dispositivos"}/>
+        <div className="bigBox" 
+            style={{display:(bigBox.id === 0?"none":"flex")}}>
+            <img src={bigBox.imagen} alt={bigBox.nombre} />
+            <div>
+                <Subtitle txt={bigBox.nombre} />
+                <p>{bigBox.descripcion}</p>
             </div>
         </div>
+        <div className="grid">
+            {loading ? 
+                <Subtitle txt={"Cargando..."} />:
+                dispositivos.map((dispositivo) => (
+                    <a href={"#info"} key={dispositivo.id} className="imgBox">
+                            <img src={dispositivo.imagen} alt={dispositivo.nombre} onClick={handleClick}/>
+                        </a>)
+                )
+            }
+        </div>
+      </div>
     )
 }
 

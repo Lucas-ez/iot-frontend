@@ -1,0 +1,16 @@
+.Title {
+  padding-top: 2rem;
+  padding-left: 10%;
+  padding-bottom: 2rem;
+  font-style: italic;
+  font-size: 4em;
+  font-weight: bold;
+  opacity: 0.8;
+  text-align: left;
+}
+
+@media (max-width: 524px) {
+  .Title {
+    font-size: 3em;
+  }
+}

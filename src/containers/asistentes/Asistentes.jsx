@@ -35,12 +35,7 @@ const Asistente = (args) => {
             <img src={img} alt={nombreImg}/>
             <div>
                 <Subtitle txt={titulo} />
-                <p style={
-                    {   
-                        paddingTop: "2rem",
-                        fontSize: "1rem",
-                    }
-                }>{descripcion}</p>
+                <p>{descripcion}</p>
             </div>
         </div>
     )

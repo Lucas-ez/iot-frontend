@@ -1,17 +1,8 @@
+import './titles.css'
+
 export const Title = ({ txt }) => {
     return (
-        <div style={
-            {
-                paddingTop: "2rem",
-                paddingLeft: "10%",
-                paddingBottom: "2rem",
-                fontStyle: "italic",
-                fontSize: "4em",
-                fontWeight: "bold",
-                opacity: "0.8",
-                textAlign: "left"
-            }
-        }>
+        <div className='Title'>
             {txt}
         </div>
     );
